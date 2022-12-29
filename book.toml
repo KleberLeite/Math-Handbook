@@ -1,0 +1,13 @@
+[book]
+authors = ["Kleber Leite"]
+language = "pt-BR"
+multilingual = false
+src = "src"
+title = "Math - Handbook"
+
+[build]
+build-dir = "./docs"
+
+[output.html]
+mathjax-support = true
+default-theme = "navy"
