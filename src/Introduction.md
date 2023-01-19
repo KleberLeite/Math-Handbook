@@ -1,3 +1,3 @@
 # Introdução
-&nbsp;Este repositório tem como finalidade armazenar [resumos](./Summaries/Summaries.md) além de [questões e suas soluções]().
+&nbsp;Este repositório tem como finalidade armazenar [resumos](./Summaries/Summaries.md) e [questões](./Questions/Questions.md).
 
