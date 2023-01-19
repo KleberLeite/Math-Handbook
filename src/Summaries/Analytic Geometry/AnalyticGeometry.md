@@ -34,7 +34,7 @@
 Obs: Considere nas fórmulas abaixo as circunferências de centro \\(O(a, b)\\)
 - Equações da circuferência:
 1. Geral: \\(x^2 + y^2 -2ax  -2by + (a^2+b^2-r^2)=0\\)
-2. Base: \\(x-a)^2 + (y-b)^2 = r^2\\)
+2. Base: \\((x-a)^2 + (y-b)^2 = r^2\\)
 - Posições relativas entre circunferências e retas:
 1. Secante: \\(d(O, t) < r\\)
 2. Tangente: \\(d(O, t) = r\\)
@@ -47,7 +47,7 @@ Obs: Considere nas fórmulas abaixo as circunferências de centro \\(O(a, b)\\)
 - \\(V\\) é o vértice da parábol: \\(d(V, d) = d(V, F)\\)
 - A reta \\(s\\) que passa pelo ponto \\(F\\) e é perpendicular à \\(d\\) é o eixo de simetria
 - Equações (com vértice na origem):
-1. \\(F(c, 0\\): \\(y^2 = 4cx\\)
+1. \\(F(c, 0)\\): \\(y^2 = 4cx\\)
 2. \\(F(-c, 0)\\): \\(y^2 = -4cx\\)
 3. \\(F(0, c)\\): \\(x^2 = 4cy\\)
 4. \\(F(0, -c)\\): \\(x^2 = -4cy\\)
