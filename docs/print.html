@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introdução</a></li><li class="chapter-item expanded "><a href="Summaries/Summaries.html"><strong aria-hidden="true">2.</strong> Resumos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Summaries/Spatial Geometry/SpatialGeometry.html"><strong aria-hidden="true">2.1.</strong> Geometria Espacial</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introdução</a></li><li class="chapter-item expanded "><a href="Summaries/Summaries.html"><strong aria-hidden="true">2.</strong> Resumos</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Summaries/Spatial Geometry/SpatialGeometry.html"><strong aria-hidden="true">2.1.</strong> Geometria Espacial</a></li><li class="chapter-item expanded "><a href="Summaries/Analytic Geometry/AnalyticGeometry.html"><strong aria-hidden="true">2.2.</strong> Geometria Analítica</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -152,6 +152,7 @@
 <br></p>
 <ul>
 <li><a href="Summaries/./Spatial%20Geometry/SpatialGeometry.html">Geometria Espacial</a></li>
+<li><a href="Summaries/./Analytic%20Geometry/AnalyticGeometry.html">Geometria Analítica</a></li>
 </ul>
 <!-- Categorias
 - Trigonometria
@@ -194,6 +195,135 @@
 <li>\(A_{fuso} = 2\alpha R^2 \text{ em radianos}\)</li>
 <li>\(V_{cunha} = \frac{\alpha \pi R^3}{270} \text{ em graus}\)</li>
 <li>\(V_{cunha} = \frac{2\alpha R^3}3 \text{ em radianos}\)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="geometria-analítica"><a class="header" href="#geometria-analítica">Geometria Analítica</a></h1>
+<h3 id="pontos-e-retas"><a class="header" href="#pontos-e-retas">Pontos e Retas</a></h3>
+<ul>
+<li>Distância entre dois pontos: \(d(A, B) = \sqrt{(B_x - A_x)^2 + (B_y - A_y)^2}\)</li>
+<li>Ponto médio: \(P_m = \left(\frac{X_1 + X_2}2, \frac{Y_1 + Y_2}2\right)\)</li>
+<li>Baricentro de um triângulo: \(B = \left( \frac{X_1+X_2+X_3}2, \frac{Y_1+Y_2+Y_3}2\right)\)</li>
+<li>Condição de alinhamento de 3 pontos: \( \begin{vmatrix}
+X_1 &amp; Y_1 &amp; 1 \\
+X_2 &amp; Y_2 &amp; 1 \\
+X_3 &amp; Y_3 &amp; 1 \end{vmatrix} = 0\)</li>
+<li>Coeficiente angular da reta: \(m = \frac{\Delta y}{\Delta x} = \tan(\alpha)\)</li>
+<li>Equações de retas:</li>
+</ul>
+<ol>
+<li>Equação fundamental da reta: \(\Delta y = m\Delta x\)</li>
+<li>Equação geral da reta: \(ax + by + c = 0\)</li>
+<li>\(y = mx + n\), sendo \(n\) o coeficiente linear (quando \(x=0)\)</li>
+<li>\(\frac{x}a + \frac{y}b = 1\) sendo \(a \text{ e } b\) o ponto que a reta intersecta o eixo das abscissas e ordenadas respectivamente</li>
+</ol>
+<ul>
+<li>Estudo das retas:</li>
+</ul>
+<ol>
+<li>Se \(m_1 = m_2\): \(r_1 \text{ // } r_2\), se \(n_1 = n_2\) então \(r_1 = r_2\)</li>
+<li>Se \(m_1 \neq m_2\): \(r_1 \text { é concorrente a } r_2\)</li>
+</ol>
+<ul>
+<li>Estudo da intersecção das retas:</li>
+</ul>
+<ol>
+<li>Possível e determinado: retas concorrentes</li>
+<li>Possível e inderterminado: paralelas coincidentes</li>
+<li>Impossível: paralelas distintas</li>
+</ol>
+<ul>
+<li>Perpendicularidade: \(r_1 \bot r_2 \Leftrightarrow m_1m_2=1\)</li>
+<li>Distância ponto e reta: \(d(P, r) = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\), sendo \(ax+by+c=0\) a equação da reta \(r\)</li>
+<li>Distância entre duas retas paralelas: \(d(r, s) = \frac{\vert c_1 - c_2\vert}{\sqrt{a^2+b^2}}\), sendo \(c_1 \text { e } c_2\) os respectivos valores de \(c\) das equações da reta \(r \text { e } s\)</li>
+<li>Área de um triângulo: \(A_t = \begin{vmatrix}
+X_1 &amp; Y_1 &amp; 1 \\
+X_2 &amp; Y_2 &amp; 1 \\
+X_3 &amp; Y_2 &amp; 1\end{vmatrix} = \frac{\overline{BC}h}2\)</li>
+</ul>
+<h3 id="circunferências"><a class="header" href="#circunferências">Circunferências</a></h3>
+<p>Obs: Considere nas fórmulas abaixo as circunferências de centro \(O(a, b)\)</p>
+<ul>
+<li>Equações da circuferência:</li>
+</ul>
+<ol>
+<li>Geral: \(x^2 + y^2 -2ax  -2by + (a^2+b^2-r^2)=0\)</li>
+<li>Base: \(x-a)^2 + (y-b)^2 = r^2\)</li>
+</ol>
+<ul>
+<li>Posições relativas entre circunferências e retas:</li>
+</ul>
+<ol>
+<li>Secante: \(d(O, t) &lt; r\)</li>
+<li>Tangente: \(d(O, t) = r\)</li>
+<li>Exterior: \(d(O, t) &gt; r\)</li>
+</ol>
+<h3 id="parábolas"><a class="header" href="#parábolas">Parábolas</a></h3>
+<ul>
+<li>É o conjunto de pontos equidistantes de uma reta \(d\) e um ponto \(F\)</li>
+<li>\(F\) é o foco da parábola (\(F \not \in d\))</li>
+<li>\(d\) é a diretriz da parábola</li>
+<li>\(V\) é o vértice da parábol: \(d(V, d) = d(V, F)\)</li>
+<li>A reta \(s\) que passa pelo ponto \(F\) e é perpendicular à \(d\) é o eixo de simetria</li>
+<li>Equações (com vértice na origem):</li>
+</ul>
+<ol>
+<li>\(F(c, 0\): \(y^2 = 4cx\)</li>
+<li>\(F(-c, 0)\): \(y^2 = -4cx\)</li>
+<li>\(F(0, c)\): \(x^2 = 4cy\)</li>
+<li>\(F(0, -c)\): \(x^2 = -4cy\)</li>
+</ol>
+<ul>
+<li>Equações (com vértice qualquer): </li>
+</ul>
+<ol>
+<li>Voltada à direita: \((y-V_y) = 4c(x-V_x)\) </li>
+<li>Voltada à esquerda: \((y-V_y) = -4c(x-V_x)\)</li>
+<li>Voltada para cima: \((x-V_x) = 4c(y-V_y)\)</li>
+<li>Voltada para baixo: \((x-V_x) = -4c(y-V_y)\)</li>
+</ol>
+<h3 id="elipse"><a class="header" href="#elipse">Elipse</a></h3>
+<ul>
+<li>É o lugar geométrico dos pontos de um plano tais que a soma de suas distânicas a dois pontos fixos \(F_1 \text{ e } F_2\), seja constante \(k &gt; d(F_1, F_2)\)</li>
+<li>\(F_1 \text{ e } F_2\) são os focos</li>
+<li>\(d(F_1, F_2) = 2c\) é a distância focal</li>
+<li>\(\overline{A_1A_2}\) é o eixo maior</li>
+<li>\(\overline{B_1B_2}\) é o eixo menor</li>
+<li>\(O\) é o centro da elipse e ponto médio de \(\overline{F_1F_2}\)</li>
+<li>\(e=\frac{c}a, 0 &lt; e &lt; 1\), se chama a excentricidade da elipse (próximo de 0 a elipse tende a uma circunferência; próximo de 1 a elipse tende a uma reta)</li>
+<li>Equações:</li>
+</ul>
+<ol>
+<li>\(b^2 = a^2-c^2\)</li>
+<li>\(\overline{A_1A_2} \text{ // } y\): \(\frac{(X-O_x)^2}{b^2} + \frac{(Y-O_y)^2}{a^2} = 1\)</li>
+<li>\(\overline{A_1A_2} \text{ // } x\): \(\frac{(X-O_x)^2}{a^2} + \frac{(Y-O_y)^2}{b^2} = 1\)</li>
+</ol>
+<h3 id="hipérbole"><a class="header" href="#hipérbole">Hipérbole</a></h3>
+<ul>
+<li>É o lugar geométrico dos pontos de um plano tais que a diferença em módulo de suas distâncias a dois pontos fixos, \(F_1 \text { e } F_2\) é constante</li>
+<li>\(F_1 \text{ e } F_2\) são os focos</li>
+<li>\(d(F_1, F_2) = 2c\) é a distância focal</li>
+<li>\(A_1 \text { e } A_2\) são os vértices</li>
+<li>\(d(A_1, A_2) = d(A_1, F_2) = d(A_2, A_1)\)</li>
+<li>\(e=\frac{c}a, 0 &lt; e &lt; 1\) (próximo de 0 a hipérbole tende a duas semirretas opostas; próximo de 1 tende a duas retas paralelas)</li>
+<li>\(\overline{B_1B_2}\) é o eixo imaginário e mediatriz de \(\overline{A_1A_2}\)</li>
+<li>\(\overline{A_1A_2}\) é o eixo real</li>
+<li>\(O\) é o centro da hipérbole</li>
+<li>Equações:</li>
+</ul>
+<ol>
+<li>\(b^2 = a^2-c^2\)</li>
+<li>\(\overline{A_1A_2} \text{ // } x\): \(\frac{(X-O_x)^2}{a^2}-\frac{(Y-O_y)^2}{b^2} = 1\)</li>
+<li>\(\overline{A_1A_2} \text{ // } y\): \(\frac{(Y-O_y)^2}{a^2}-\frac{(X-O_x)^2}{b^2} = 1\)</li>
+</ol>
+<ul>
+<li>Assíntotas:</li>
+</ul>
+<ol>
+<li>\(l_1 \text{ e } l_2\) são as assíntotas da hipérbole</li>
+<li>\(l_1\): \(bx-ay=0\) ou \(y = \frac{b}ax\)</li>
+<li>\(l_2\): \(bx+ay=0\) ou \(y = -\frac{b}ax\)</li>
+</ol>
+<ul>
+<li>Hipérbole equilátera: ocorre quando \(b = a \Rightarrow l_1 \bot l_2\)</li>
 </ul>
 
                     </main>
