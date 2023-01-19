@@ -3,6 +3,7 @@
 <br>
 
 - [Geometria Espacial](./Spatial%20Geometry/SpatialGeometry.md)
+- [Geometria Analítica](./Analytic%20Geometry/AnalyticGeometry.md)
 
 <!-- Categorias
 - Trigonometria
