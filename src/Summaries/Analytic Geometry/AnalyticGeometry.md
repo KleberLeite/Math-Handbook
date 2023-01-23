@@ -22,7 +22,7 @@
 1. Possível e determinado: retas concorrentes
 2. Possível e inderterminado: paralelas coincidentes
 3. Impossível: paralelas distintas
-- Perpendicularidade: \\(r_1 \bot r_2 \Leftrightarrow m_1m_2=1\\)
+- Perpendicularidade: \\(r_1 \bot r_2 \Leftrightarrow m_1m_2=-1\\)
 - Distância ponto e reta: \\(d(P, r) = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\), sendo \\(ax+by+c=0\\) a equação da reta \\(r\\)
 - Distância entre duas retas paralelas: \\(d(r, s) = \frac{\vert c_1 - c_2\vert}{\sqrt{a^2+b^2}}\\), sendo \\(c_1 \\text { e } c_2\\) os respectivos valores de \\(c\\) das equações da reta \\(r \\text { e } s\\)
 - Área de um triângulo: \\(A_t = \frac{\vert D\vert}2 = \frac{\overline{BC}h}2\\), sendo \\( D = \begin{vmatrix}
