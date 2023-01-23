@@ -4,7 +4,7 @@
 ### Pontos e Retas
 - Distância entre dois pontos: \\(d(A, B) = \sqrt{(B_x - A_x)^2 + (B_y - A_y)^2}\\)
 - Ponto médio: \\(P_m = \left(\frac{X_1 + X_2}2, \frac{Y_1 + Y_2}2\right)\\)
-- Baricentro de um triângulo: \\(B = \left( \frac{X_1+X_2+X_3}2, \frac{Y_1+Y_2+Y_3}2\right)\\)
+- Baricentro de um triângulo: \\(B = \left( \frac{X_1+X_2+X_3}3, \frac{Y_1+Y_2+Y_3}3\right)\\)
 - Condição de alinhamento de 3 pontos: \\( \begin{vmatrix}
     X_1 & Y_1 & 1 \\\\
     X_2 & Y_2 & 1 \\\\
