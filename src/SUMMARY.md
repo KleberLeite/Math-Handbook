@@ -1,6 +1,7 @@
 # Summary
 
 - [Introdução](./Introduction.md)
+- [Rascunhos](./Drafts/Drafts.md)
 - [Questões](./Questions/Questions.md)
     - [Geometria Analítica](./Questions/Analytic%20Geometry/AnalyticGeometry.md)
 - [Resumos](./Summaries/Summaries.md)
