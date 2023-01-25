@@ -147,9 +147,9 @@
                         <h1 id="questões-de-geometria-analítica"><a class="header" href="#questões-de-geometria-analítica">Questões de Geometria Analítica</a></h1>
 <h3 id="1---novo-personagem"><a class="header" href="#1---novo-personagem">1 - Novo Personagem</a></h3>
 <p>    Uma equipe de desenvolvimento de jogos está criando um novo personagem para seu jogo &quot;BattleStars&quot;. O texto abaixo é a descrição de uma de suas habilidades: <br></p>
-<p>    &quot;Nexus invoca uma estrela a sua frente que cresce baseado no tempo decorrido, é possível reconjurar a habilidade para que ela exploda causando dano e atordoando inimigos dentro do seu raio. A habilidade irá reconjurar automaticamente caso Nexus esteja muito longe da mesma.&quot;
+<p>    &quot;Nexus invoca uma estrela a sua frente que segue uma tragetória retilínea que cresce baseado no tempo decorrido. É possível reconjurar a habilidade para que ela exploda causando dano e atordoando inimigos dentro do seu raio. (A habilidade irá reconjurar automaticamente caso Nexus esteja muito longe da mesma)&quot;
 <br></p>
-<p>    Sabendo que o personagem e a habilidade possuem velocidades constantes respectivamente dadas por \(V_p = 3u/s \text{ e } V_h = 5t+2u/s\) (sendo \(u\) unidade de distância), e que o raio da circunferência que delimita a habilidade é dada por \(R_h(t) = \frac34 t + \sqrt{2}\text{ u}\), sendo \(t\) o tempo em segundos decorrido após a conjuração da habilidade. Considerando ainda que a distância máxima entre Nexus e a habilidade para que a mesma não seja reconjurada automaticamente seja \(5u\) em relação ao ponto mais próximo da circunferência em relação ao personagem e que a estrela surge a \(4u\) de distância do mesmo, calcule a área máxima que Nexus pode causar de atordoamento com sua habilidade.</p>
+<p>    Sabendo que o personagem e a habilidade possuem velocidades constantes respectivamente dadas por \(V_p = 3u/s \text{ e } V_h = 5u/s\) (sendo \(u\) unidade de distância) e que a habilidade surge a \(4u\) de distância de Nexus com raio da circunferência que a delimita dada por \(R_h(t) = \frac54 t + \frac32u\) (sendo \(t\) o tempo em segundos decorrido após a conjuração da habilidade). Considerando ainda que a distância máxima entre Nexus e a habilidade para que a mesma não seja reconjurada automaticamente seja \(5.5u\) em relação ao ponto mais próximo da circunferência em relação ao personagem, calcule a área máxima que Nexus pode causar de atordoamento com sua habilidade.</p>
 
                     </main>
 
@@ -180,6 +180,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
