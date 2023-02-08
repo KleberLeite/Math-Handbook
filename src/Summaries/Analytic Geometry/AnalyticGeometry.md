@@ -1,91 +1,66 @@
 
 # Geometria Analítica
 
-### Pontos e Retas
-- Distância entre dois pontos: \\(d(A, B) = \sqrt{(B_x - A_x)^2 + (B_y - A_y)^2}\\)
-- Ponto médio: \\(P_m = \left(\frac{X_1 + X_2}2, \frac{Y_1 + Y_2}2\right)\\)
-- Baricentro de um triângulo: \\(B = \left( \frac{X_1+X_2+X_3}3, \frac{Y_1+Y_2+Y_3}3\right)\\)
-- Condição de alinhamento de 3 pontos: \\( \begin{vmatrix}
-    X_1 & Y_1 & 1 \\\\
-    X_2 & Y_2 & 1 \\\\
-    X_3 & Y_3 & 1 \end{vmatrix} = 0\\)
-- Coeficiente angular da reta: \\(m = \frac{\Delta y}{\Delta x} = \tan(\alpha)\\)
-- Equações de retas:
-1. Equação fundamental da reta: \\(\Delta y = m\Delta x\\)
-2. Equação geral da reta: \\(ax + by + c = 0\\)
-3. \\(y = mx + n\\), sendo \\(n\\) o coeficiente linear (quando \\(x=0)\\)
-4. \\(\frac{x}a + \frac{y}b = 1\\) sendo \\(a \\text{ e } b\\) o ponto que a reta intersecta o eixo das abscissas e ordenadas respectivamente
-- Estudo das retas:
-1. Se \\(m_1 = m_2\\): \\(r_1 \\text{ // } r_2\\), se \\(n_1 = n_2\\) então \\(r_1 = r_2\\)
-2. Se \\(m_1 \neq m_2\\): \\(r_1 \\text { é concorrente a } r_2\\)
-- Estudo da intersecção das retas:
-1. Possível e determinado: retas concorrentes
-2. Possível e inderterminado: paralelas coincidentes
-3. Impossível: paralelas distintas
-- Perpendicularidade: \\(r_1 \bot r_2 \Leftrightarrow m_1m_2=-1\\)
-- Distância ponto e reta: \\(d(P, r) = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\), sendo \\(ax+by+c=0\\) a equação da reta \\(r\\)
-- Distância entre duas retas paralelas: \\(d(r, s) = \frac{\vert c_1 - c_2\vert}{\sqrt{a^2+b^2}}\\), sendo \\(c_1 \\text { e } c_2\\) os respectivos valores de \\(c\\) das equações da reta \\(r \\text { e } s\\)
-- Área de um triângulo: \\(A_t = \frac{\vert D\vert}2 = \frac{\overline{BC}h}2\\), sendo \\( D = \begin{vmatrix}
-    X_1 & Y_1 & 1 \\\\
-    X_2 & Y_2 & 1 \\\\
-    X_3 & Y_3 & 1\end{vmatrix}\\)
+## Plano Cartesiano
 
-### Circunferências
-Obs: Considere nas fórmulas abaixo as circunferências de centro \\(O(a, b)\\)
-- Equações da circuferência:
-1. Geral: \\(x^2 + y^2 -2ax  -2by + (a^2+b^2-r^2)=0\\)
-2. Base: \\((x-a)^2 + (y-b)^2 = r^2\\)
-- Posições relativas entre circunferências e retas:
-1. Secante: \\(d(O, t) < r\\)
-2. Tangente: \\(d(O, t) = r\\)
-3. Exterior: \\(d(O, t) > r\\)
+### Definição:
+&nbsp;&nbsp;O plano cartesiano pode ser construído a partir de duas retas \\(x\\) (abscissa) e \\(y\\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \\(O\\). Definido o plano é possível identificar qualquer ponto \\(P\\), representado por um par ordenado \\(x, y\\).
 
-### Parábolas
-- É o conjunto de pontos equidistantes de uma reta \\(d\\) e um ponto \\(F\\)
-- \\(F\\) é o foco da parábola (\\(F \not \in d\\))
-- \\(d\\) é a diretriz da parábola
-- \\(V\\) é o vértice da parábol: \\(d(V, d) = d(V, F)\\)
-- A reta \\(s\\) que passa pelo ponto \\(F\\) e é perpendicular à \\(d\\) é o eixo de simetria
-- Equações (com vértice na origem):
-1. \\(F(c, 0)\\): \\(y^2 = 4cx\\)
-2. \\(F(-c, 0)\\): \\(y^2 = -4cx\\)
-3. \\(F(0, c)\\): \\(x^2 = 4cy\\)
-4. \\(F(0, -c)\\): \\(x^2 = -4cy\\)
-- Equações (com vértice qualquer): 
-1. Voltada à direita: \\((y-V_y) = 4c(x-V_x)\\) 
-2. Voltada à esquerda: \\((y-V_y) = -4c(x-V_x)\\)
-3. Voltada para cima: \\((x-V_x) = 4c(y-V_y)\\)
-3. Voltada para baixo: \\((x-V_x) = -4c(y-V_y)\\)
+#### Quadrantes:
+&nbsp;&nbsp;A intersecção do plano cria quatro regiões chamadas quadrantes (representados por 1ºq, por exemplo), definidos pelas seguintes relações:
+- 1ºq: \\(x > 0\\) e \\(y > 0 \\)
+- 2ºq: \\(x < 0\\) e \\(y > 0 \\)
+- 3ºq: \\(x < 0\\) e \\(y < 0 \\)
+- 4ºq: \\(x > 0\\) e \\(y < 0 \\)
 
-### Elipse
-- É o lugar geométrico dos pontos de um plano tais que a soma de suas distânicas a dois pontos fixos \\(F_1 \\text{ e } F_2\\), seja constante \\(k > d(F_1, F_2)\\)
-- \\(F_1 \\text{ e } F_2\\) são os focos
-- \\(d(F_1, F_2) = 2c\\) é a distância focal
-- \\(\overline{A_1A_2}\\) é o eixo maior
-- \\(\overline{B_1B_2}\\) é o eixo menor
-- \\(O\\) é o centro da elipse e ponto médio de \\(\overline{F_1F_2}\\)
-- \\(e=\frac{c}a, 0 < e < 1\\), se chama a excentricidade da elipse (próximo de 0 a elipse tende a uma circunferência; próximo de 1 a elipse tende a uma reta)
-- Equações:
-1. \\(b^2 = a^2-c^2\\)
-2. \\(\overline{A_1A_2} \\text{ // } y\\): \\(\frac{(X-O_x)^2}{b^2} + \frac{(Y-O_y)^2}{a^2} = 1\\)
-3. \\(\overline{A_1A_2} \\text{ // } x\\): \\(\frac{(X-O_x)^2}{a^2} + \frac{(Y-O_y)^2}{b^2} = 1\\)
+#### Bissetrizes:
+&nbsp;&nbsp;O plano nos permite desenhar duas bissetrizes, a dos quadrantes ímpares (1ºq e 3ºq), com relação \\(x = y\\) e a dos quadrantes pares (2ºq e 4ºq), com relação \\(x = -y\\).
 
-### Hipérbole
-- É o lugar geométrico dos pontos de um plano tais que a diferença em módulo de suas distâncias a dois pontos fixos, \\(F_1 \\text { e } F_2\\) é constante
-- \\(F_1 \\text{ e } F_2\\) são os focos
-- \\(d(F_1, F_2) = 2c\\) é a distância focal
-- \\(A_1 \\text { e } A_2\\) são os vértices
-- \\(d(A_1, A_2) = d(A_1, F_2) = d(A_2, A_1)\\)
-- \\(e=\frac{c}a, 0 < e < 1\\) (próximo de 0 a hipérbole tende a duas semirretas opostas; próximo de 1 tende a duas retas paralelas)
-- \\(\overline{B_1B_2}\\) é o eixo imaginário e mediatriz de \\(\overline{A_1A_2}\\)
-- \\(\overline{A_1A_2}\\) é o eixo real
-- \\(O\\) é o centro da hipérbole
-- Equações:
-1. \\(b^2 = a^2-c^2\\)
-2. \\(\overline{A_1A_2} \\text{ // } x\\): \\(\frac{(X-O_x)^2}{a^2}-\frac{(Y-O_y)^2}{b^2} = 1\\)
-3. \\(\overline{A_1A_2} \\text{ // } y\\): \\(\frac{(Y-O_y)^2}{a^2}-\frac{(X-O_x)^2}{b^2} = 1\\)
-- Assíntotas:
-1. \\(l_1 \\text{ e } l_2\\) são as assíntotas da hipérbole
-2. \\(l_1\\): \\(bx-ay=0\\) ou \\(y = \frac{b}ax\\)
-3. \\(l_2\\): \\(bx+ay=0\\) ou \\(y = -\frac{b}ax\\)
-- Hipérbole equilátera: ocorre quando \\(b = a \Rightarrow l_1 \bot l_2\\)
+#### Distância entre dois pontos:
+&nbsp;&nbsp;Dado dois pontos \\(A\\) e \\(B\\) quaisquer podemos obter a distância \\(d_{AB}\\) por meio do Teorema de Pitágoras ou como sendo:
+\\[d_{AB} = \sqrt{(A_x-B_x)^2+(A_y-B_y)^2}\\]
+
+#### Ponto médio:
+&nbsp;&nbsp;É o ponto \\(C\\) pertencente a reta suporte \\(AB\\) tal que \\(d_{AC} = d_{CB}\\), suas coordenadas podem ser obtidas da seguinte maneira:
+\\[M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\\]
+
+#### Baricentro de um triângulo:
+&nbsp;&nbsp;É o ponto de intersecção das alturas relativas de seus lados, pode ser obtido da seguinte maneira:
+\\[H\left(\frac{A_x+B_x+C_x}3, \frac{A_y+B_y+C_y}3\right)\\]
+
+#### Condição de alinhamento de 3 pontos:
+&nbsp;&nbsp;Quando 3 pontos pertencem a mesma reta, ou seja, são colineares, eles são soluções da equação da reta. Dado 3 pontos colineares \\(A, B, C\\):
+\\[
+    \begin{vmatrix}
+    A_x & A_y & 1 \\\\
+    B_x & B_y & 1 \\\\
+    C_x & C_y & 1
+    \end{vmatrix} = 0
+\\]
+
+#### Área de um triângulo a partir de seus pontos:
+&nbsp;&nbsp;Podemos descobrir a área de um triângulo a partir dos seus pontos:
+\\[
+    A = \frac{\vert D\vert}2, \\text{ sendo } D = \begin{vmatrix}
+    A_x & A_y & 1 \\\\
+    B_x & B_y & 1 \\\\
+    C_x & C_y & 1
+    \end{vmatrix}
+\\]
+
+#### Retas:
+##### Coeficiente linear:
+&nbsp;&nbsp;&nbsp;&nbsp;Indica a inclinação da reta em relação ao eixo \\(x\\) e pode ser obtido por \\(m = \tan(\theta) = \frac{\Delta y}{\Delta x}\\)
+- Se \\(m_1 = m_2\\), então as retas são paralelas
+- Se \\(m_1 \neq m_2\\), então as retas são concorrentes
+- Se \\(m_1⋅m_2 = -1\\), então as retas são perpendiculares entre si
+
+##### Equações de reta:
+- \\(y - y_0 = m(x-x_0)\\)
+- \\(y = mx + n\\), \\(n\\) é o coeficiente linear obtido quando \\(x = 0\\)
+- \\(\frac{x}a + \frac{y}b = 1\\), sendo \\(a\\) o ponto em que \\(y = 0\\) e \\(b\\) o ponto em que \\(x=0\\)
+- \\(ax+by+c=0\\), \\(m\\) pode ser obtido a partir de \\(m = \frac{-a}b\\)
+
+#### Distância entre ponto e reta:
+&nbsp;&nbsp;Dado uma reta \\(r\\) dada por \\(ax+by+c=0\\) e um ponto \\(P(P_x, P_y)\\):
+\\[d_{Ar} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\]
