@@ -4,7 +4,7 @@
 ## Plano Cartesiano
 
 ### Definição:
-&nbsp;&nbsp;O plano cartesiano pode ser construído a partir de duas retas \\(x\\) (abscissa) e \\(y\\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \\(O\\). Definido o plano é possível identificar qualquer ponto \\(P\\), representado por um par ordenado \\(x, y\\).
+&nbsp;&nbsp;O plano cartesiano pode ser construído a partir de duas retas \\(x\\) (abscissa) e \\(y\\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \\(O\\). Definido o plano é possível identificar qualquer ponto \\(P\\), representado por um par ordenado \\(P(x, y)\\).
 
 #### Quadrantes:
 &nbsp;&nbsp;A intersecção do plano cria quatro regiões chamadas quadrantes (representados por 1ºq, por exemplo), definidos pelas seguintes relações:

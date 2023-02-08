@@ -210,7 +210,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="geometria-analítica"><a class="header" href="#geometria-analítica">Geometria Analítica</a></h1>
 <h2 id="plano-cartesiano"><a class="header" href="#plano-cartesiano">Plano Cartesiano</a></h2>
 <h3 id="definição"><a class="header" href="#definição">Definição:</a></h3>
-<p>  O plano cartesiano pode ser construído a partir de duas retas \(x\) (abscissa) e \(y\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \(O\). Definido o plano é possível identificar qualquer ponto \(P\), representado por um par ordenado \(x, y\).</p>
+<p>  O plano cartesiano pode ser construído a partir de duas retas \(x\) (abscissa) e \(y\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \(O\). Definido o plano é possível identificar qualquer ponto \(P\), representado por um par ordenado \(P(x, y)\).</p>
 <h4 id="quadrantes"><a class="header" href="#quadrantes">Quadrantes:</a></h4>
 <p>  A intersecção do plano cria quatro regiões chamadas quadrantes (representados por 1ºq, por exemplo), definidos pelas seguintes relações:</p>
 <ul>
@@ -284,6 +284,22 @@ C_x &amp; C_y &amp; 1
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
