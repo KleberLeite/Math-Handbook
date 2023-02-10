@@ -20,6 +20,11 @@
 &nbsp;&nbsp;Dado dois pontos \\(A\\) e \\(B\\) quaisquer podemos obter a distância \\(d_{AB}\\) por meio do Teorema de Pitágoras ou como sendo:
 \\[d_{AB} = \sqrt{(A_x-B_x)^2+(A_y-B_y)^2}\\]
 
+<div align="center">
+
+![Distância entre Pontos](../Images/Analytic%20Geometry/PointsDistance.png)
+</div>
+
 #### Ponto médio:
 &nbsp;&nbsp;É o ponto \\(C\\) pertencente a reta suporte \\(AB\\) tal que \\(d_{AC} = d_{CB}\\), suas coordenadas podem ser obtidas da seguinte maneira:
 \\[M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\\]
@@ -64,3 +69,60 @@
 #### Distância entre ponto e reta:
 &nbsp;&nbsp;Dado uma reta \\(r\\) dada por \\(ax+by+c=0\\) e um ponto \\(P(P_x, P_y)\\):
 \\[d_{Ar} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\]
+
+### Questões:
+#### 1º)
+Identifique no plano os seguintes pontos e indique quais pertences as bissetrizes:
+
+<div align="center">
+
+![Plano Cartesiano](../Images/Analytic%20Geometry/Question-1.png)
+</div>
+
+\\[A(1,1) \quad B(-3, 3)\quad C(7, 7) \quad D(3, -1) \quad E(-6,-5)\\]
+\\[F(-2, 6) \quad G(2, -4) \quad H(5,-5) \quad I(-5, 2) \quad J(-7,4)\\]
+\\[K(-2,-2) \quad L(2, 4) \quad M(6, 3) \quad N(7,2) \quad O(7,-2)\\]
+\\[P(-4,-3) \quad Q(-1, -6)\\]
+
+#### 2)
+Calcule as distâncias:
+- \\(d_{AB}\\)
+- \\(d_{JO}\\)
+- \\(d_{GH}\\)
+- \\(d_{FK}\\)
+- \\(d_{PQ}\\)
+- \\(d_{NO}\\)
+- \\(d_{IJ}\\)
+- \\(d_{AC}\\)
+
+#### 3)
+Um ponto \\(A(a^2+4, 4a)\\) pertence a bissetriz dos quadrantes ímpares e a uma circuferência de centro \\(O(0, 0)\\), qual a área dessa circuferência?
+
+#### 4)
+Defina as coordenadas do ponto D de um paralelogramo de vértices:
+\\[A(4, 2) \quad B(0, -1) \quad C(1,1)\\]
+
+#### 5)
+Defina as coordenadas do ponto \\(H\\) que é vértice da altura relativa ao lado AC de um triângulo isósceles de vértices:
+\\[A(4,2) \quad B(3,0) \quad C(1,1)\\]
+
+#### 6)
+Qual a projeção ortogonal do centro de massa de uma forma prismática triangular regular de vértices:
+\\[A(3, 2, 1) \quad B(4, 0, 1) \quad C(1, 1, 1)\\]
+
+#### 7)
+Defina uma relação para que um ponto \\(P(P_x, P_y)\\) pertença a uma reta que tem dois outros pontos:
+\\[A(2, 2) \quad B(5, 3)\\]
+
+#### 8)
+Defina a equação da reta suporte da altura relativa ao lado AB de vértices:
+\\[A(5, 3) \quad B(2, 1) \quad C(3, 4)\\]
+
+#### 9)
+Defina o comprimento da altura \\(H\\) relativa ao lado AB do triângulo:
+\\[A(5, 3) \quad B(2, 1) \quad C(3, 4)\\]
+
+#### 10)
+Sabendo que um triângulo de vértices:
+\\[A(1, 1) \quad B(5, 2) \quad C(3, y)\\]
+Possui área \\(3u\\) (sendo \\(u\\) unidade de área), defina \\(y\\).

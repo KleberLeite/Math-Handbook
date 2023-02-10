@@ -161,6 +161,9 @@
 <h4 id="distância-entre-dois-pontos"><a class="header" href="#distância-entre-dois-pontos">Distância entre dois pontos:</a></h4>
 <p>  Dado dois pontos \(A\) e \(B\) quaisquer podemos obter a distância \(d_{AB}\) por meio do Teorema de Pitágoras ou como sendo:
 \[d_{AB} = \sqrt{(A_x-B_x)^2+(A_y-B_y)^2}\]</p>
+<div align="center">
+<p><img src="../Images/Analytic%20Geometry/PointsDistance.png" alt="Distância entre Pontos" /></p>
+</div>
 <h4 id="ponto-médio"><a class="header" href="#ponto-médio">Ponto médio:</a></h4>
 <p>  É o ponto \(C\) pertencente a reta suporte \(AB\) tal que \(d_{AC} = d_{CB}\), suas coordenadas podem ser obtidas da seguinte maneira:
 \[M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\]</p>
@@ -203,6 +206,52 @@ C_x &amp; C_y &amp; 1
 <h4 id="distância-entre-ponto-e-reta"><a class="header" href="#distância-entre-ponto-e-reta">Distância entre ponto e reta:</a></h4>
 <p>  Dado uma reta \(r\) dada por \(ax+by+c=0\) e um ponto \(P(P_x, P_y)\):
 \[d_{Ar} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\]</p>
+<h3 id="questões"><a class="header" href="#questões">Questões:</a></h3>
+<h4 id="1º"><a class="header" href="#1º">1º)</a></h4>
+<p>Identifique no plano os seguintes pontos e indique quais pertences as bissetrizes:</p>
+<div align="center">
+<p><img src="../Images/Analytic%20Geometry/Question-1.png" alt="Plano Cartesiano" /></p>
+</div>
+<p>\[A(1,1) \quad B(-3, 3)\quad C(7, 7) \quad D(3, -1) \quad E(-6,-5)\]
+\[F(-2, 6) \quad G(2, -4) \quad H(5,-5) \quad I(-5, 2) \quad J(-7,4)\]
+\[K(-2,-2) \quad L(2, 4) \quad M(6, 3) \quad N(7,2) \quad O(7,-2)\]
+\[P(-4,-3) \quad Q(-1, -6)\]</p>
+<h4 id="2"><a class="header" href="#2">2)</a></h4>
+<p>Calcule as distâncias:</p>
+<ul>
+<li>\(d_{AB}\)</li>
+<li>\(d_{JO}\)</li>
+<li>\(d_{GH}\)</li>
+<li>\(d_{FK}\)</li>
+<li>\(d_{PQ}\)</li>
+<li>\(d_{NO}\)</li>
+<li>\(d_{IJ}\)</li>
+<li>\(d_{AC}\)</li>
+</ul>
+<h4 id="3"><a class="header" href="#3">3)</a></h4>
+<p>Um ponto \(A(a^2+4, 4a)\) pertence a bissetriz dos quadrantes ímpares e a uma circuferência de centro \(O(0, 0)\), qual a área dessa circuferência?</p>
+<h4 id="4"><a class="header" href="#4">4)</a></h4>
+<p>Defina as coordenadas do ponto D de um paralelogramo de vértices:
+\[A(4, 2) \quad B(0, -1) \quad C(1,1)\]</p>
+<h4 id="5"><a class="header" href="#5">5)</a></h4>
+<p>Defina as coordenadas do ponto \(H\) que é vértice da altura relativa ao lado AC de um triângulo isósceles de vértices:
+\[A(4,2) \quad B(3,0) \quad C(1,1)\]</p>
+<h4 id="6"><a class="header" href="#6">6)</a></h4>
+<p>Qual a projeção ortogonal do centro de massa de uma forma prismática triangular regular de vértices:
+\[A(3, 2, 1) \quad B(4, 0, 1) \quad C(1, 1, 1)\]</p>
+<h4 id="7"><a class="header" href="#7">7)</a></h4>
+<p>Defina uma relação para que um ponto \(P(P_x, P_y)\) pertença a uma reta que tem dois outros pontos:
+\[A(2, 2) \quad B(5, 3)\]</p>
+<h4 id="8"><a class="header" href="#8">8)</a></h4>
+<p>Defina a equação da reta suporte da altura relativa ao lado AB de vértices:
+\[A(5, 3) \quad B(2, 1) \quad C(3, 4)\]</p>
+<h4 id="9"><a class="header" href="#9">9)</a></h4>
+<p>Defina o comprimento da altura \(H\) relativa ao lado AB do triângulo:
+\[A(5, 3) \quad B(2, 1) \quad C(3, 4)\]</p>
+<h4 id="10"><a class="header" href="#10">10)</a></h4>
+<p>Sabendo que um triângulo de vértices:
+\[A(1, 1) \quad B(5, 2) \quad C(3, y)\]
+Possui área \(3u\) (sendo \(u\) unidade de área), defina \(y\).</p>
 
                     </main>
 
@@ -227,6 +276,22 @@ C_x &amp; C_y &amp; 1
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
