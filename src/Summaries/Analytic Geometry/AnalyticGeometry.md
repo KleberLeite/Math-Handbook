@@ -160,7 +160,8 @@ Possui área \\(3u\\) (sendo \\(u\\) unidade de área), defina \\(y\\).
 \\[a^2+4=-4a \Rightarrow a^2+4a+4=0\\]
 \\[\sqrt{\Delta} = \sqrt{4^2-4⋅1⋅4} = 0\\]
 \\[a = \frac{-4\pm0}2 = -2\\]
-\\[d_{AO} = \sqrt{[((-2)^2+4)-0]^2 + (-4⋅(-2))^2} = \sqrt{128} = 8\sqrt{2}\\]
+\\[r^2 = d_{AO}^2 = [((-2)^2+4)-0]^2 + [(-4⋅(-2))- 0]^2 = 128\\]
+\\[A = 128\pi\\]
 
 #### 4º)
 <div align="center">
