@@ -61,14 +61,14 @@
 - Se \\(m_1⋅m_2 = -1\\), então as retas são perpendiculares entre si
 
 ##### Equações de reta:
-- \\(y - y_0 = m(x-x_0)\\)
+- \\(y - y_0 = m(x-x_0)\\), dado um ponto pertencente a reta \\(P(x_0, y_0)\\)
 - \\(y = mx + n\\), \\(n\\) é o coeficiente linear obtido quando \\(x = 0\\)
-- \\(\frac{x}a + \frac{y}b = 1\\), sendo \\(a\\) o ponto em que \\(y = 0\\) e \\(b\\) o ponto em que \\(x=0\\)
+- \\(\frac{x}a + \frac{y}b = 1\\), sendo \\(a\\) o ponto em que \\(y = 0\\) e \\(b\\) o ponto em que \\(x=0\\), com \\(a \\text{ e } b\neq 0\\)
 - \\(ax+by+c=0\\), \\(m\\) pode ser obtido a partir de \\(m = \frac{-a}b\\)
 
 #### Distância entre ponto e reta:
 &nbsp;&nbsp;Dado uma reta \\(r\\) dada por \\(ax+by+c=0\\) e um ponto \\(P(P_x, P_y)\\):
-\\[d_{Ar} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\]
+\\[d_{P, r} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\]
 
 #### Intersecção de duas retas:
 Dada duas retas \\(r: ax+by+c=0\\) e \\(s: dx+ey+f=0\\), o ponto de intersecção é o par ordenado \\((x, y)\\) que satisfazem as duas igualdades, ou seja, podemos resolver a intersecção de duas a partir de um sistema:
