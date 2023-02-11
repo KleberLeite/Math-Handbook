@@ -84,7 +84,7 @@ Identifique no plano os seguintes pontos e indique quais pertences as bissetrize
 \\[K(-2,-2) \quad L(2, 4) \quad M(6, 3) \quad N(7,2) \quad O(7,-2)\\]
 \\[P(-4,-3) \quad Q(-1, -6)\\]
 
-#### 2)
+#### 2º)
 Calcule as distâncias:
 - \\(d_{AB}\\)
 - \\(d_{JO}\\)
@@ -95,34 +95,34 @@ Calcule as distâncias:
 - \\(d_{IJ}\\)
 - \\(d_{AC}\\)
 
-#### 3)
-Um ponto \\(A(a^2+4, 4a)\\) pertence a bissetriz dos quadrantes ímpares e a uma circuferência de centro \\(O(0, 0)\\), qual a área dessa circuferência?
+#### 3º)
+Um ponto \\(A(a^2+4, -4a)\\) pertence a bissetriz dos quadrantes ímpares e a uma circuferência de centro \\(O(0, 0)\\), qual a área dessa circuferência?
 
-#### 4)
+#### 4º)
 Defina as coordenadas do ponto D de um paralelogramo de vértices:
 \\[A(4, 2) \quad B(0, -1) \quad C(1,1)\\]
 
-#### 5)
+#### 5º)
 Defina as coordenadas do ponto \\(H\\) que é vértice da altura relativa ao lado AC de um triângulo isósceles de vértices:
 \\[A(4,2) \quad B(3,0) \quad C(1,1)\\]
 
-#### 6)
+#### 6º)
 Qual a projeção ortogonal do centro de massa de uma forma prismática triangular regular de vértices:
 \\[A(3, 2, 1) \quad B(4, 0, 1) \quad C(1, 1, 1)\\]
 
-#### 7)
+#### 7º)
 Defina uma relação para que um ponto \\(P(P_x, P_y)\\) pertença a uma reta que tem dois outros pontos:
 \\[A(2, 2) \quad B(5, 3)\\]
 
-#### 8)
+#### 8º)
 Defina a equação da reta suporte da altura relativa ao lado AB de vértices:
 \\[A(5, 3) \quad B(2, 1) \quad C(3, 4)\\]
 
-#### 9)
+#### 9º)
 Defina o comprimento da altura \\(H\\) relativa ao lado AB do triângulo:
 \\[A(5, 3) \quad B(2, 1) \quad C(3, 4)\\]
 
-#### 10)
+#### 10º)
 Sabendo que um triângulo de vértices:
 \\[A(1, 1) \quad B(5, 2) \quad C(3, y)\\]
 Possui área \\(3u\\) (sendo \\(u\\) unidade de área), defina \\(y\\).
