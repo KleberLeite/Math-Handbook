@@ -69,6 +69,7 @@
 #### Distância entre ponto e reta:
 &nbsp;&nbsp;&nbsp;&nbsp;Dado uma reta \\(r\\) dada por \\(ax+by+c=0\\) e um ponto \\(P(P_x, P_y)\\):
 \\[d_{P, r} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\\]
+&nbsp;&nbsp;&nbsp;&nbsp;Obs: a menor distância entre um ponto e uma reta (\\(d_{P, r}\\)) é um segmento de reta \\(\overline{PQ}\\) perpendicular a \\(r\\) com \\(Q\in r\\)
 
 #### Intersecção de duas retas:
 &nbsp;&nbsp;&nbsp;&nbsp;Dada duas retas \\(r: ax+by+c=0\\) e \\(s: dx+ey+f=0\\), o ponto de intersecção é o par ordenado \\((x, y)\\) que satisfazem as duas igualdades, ou seja, podemos resolver a intersecção de duas a partir de um sistema:
