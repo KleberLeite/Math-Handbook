@@ -1,8 +1,3 @@
-⋅
-º
-\\
-&nbsp;
-
 # Questões
 
 1º) Dada uma circuferência \\(\Gamma_1\\) de equação: \\( (x-5)^2+(y-5)^2=4^2 \\) que contém internamente quatro outras circuferências externas entre si e tangentes a duas outras além da \\(\Gamma_1\\). Determine a equação dessas quatros circuferências. 
