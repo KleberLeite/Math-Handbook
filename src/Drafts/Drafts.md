@@ -2,7 +2,7 @@
 
 1º) Dada uma circunferência \\(\Gamma_1\\) de equação: \\( (x-5)^2+(y-5)^2=4^2 \\) que contém internamente quatro outras circunferências idênticas externas entre si e tangentes a duas outras além da \\(\Gamma_1\\). Determine a equação dessas quatros circunferências. 
 
-2º) Dada a circunferência \\(\Gamma_1\\) de equação: \\( (x-4)^2+(y-2)^2=4^2 \\) que circunscreve um quadrado de lados paralelos aos eixos que contém duas circunferências idênticas de centro pertencente a diagonal de reta: \\(ax+by+c=0, a \\text { e } b > 0\\). Determine a equação dessas circunferências.
+2º) Dada a circunferência \\(\Gamma_1\\) de equação: \\( (x-4)^2+(y-2)^2=4^2 \\) que circunscreve um quadrado de lados paralelos aos eixos que contém duas circunferências idênticas (tangentes entre si e ao quadrado) de centro pertencente a diagonal de reta: \\(ax+by+c=0, a \\text { e } b > 0\\). Determine a equação dessas circunferências.
 
 3º) Considerando que a circunferência \\(\Gamma\\) de equação \\( (x-5)^2+(y-5)^2=5^2 \\) abaixo se espelha infinitas vezes dentro si como demonstrado, qual será a coordenada da última circunferência? Considere que a figura está rotacionada a \\(\frac{\pi}6\\) radianos no sentido anti-horário.
 <div align="center">
