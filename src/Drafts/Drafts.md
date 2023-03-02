@@ -9,6 +9,19 @@
 
 ![Questão 3](./Images/Question_3-Question.png)
 </div>
+<br> <br>
+
+4º)
+\\( \sum_{p=0}^{n} \frac{(-1)^{p}n!}{p!(n-p)!} = 0, n \in \mathbb{N}, \frac{n}{2} \not \in \mathbb{N}, n \ge 1\\)
+<br> <br>
+
+5º)
+\\( \sum_{p=0}^{n} \log_{n}\left( \frac{n!\cdot\sin\left(\frac{\pi}{2} + p\pi\right)}{p!(n-p)!} \right) = 0, n \in \mathbb{N}, \frac{n}{2} \not \in \mathbb{N}, n \ge 2 \\)
+<br> <br>
+
+6º)
+\\( \sum_{p=0}^{n} \frac{n^{\sin\left(\frac{\pi}{2}+p\pi\right)}n!}{p!(n-p)!} = \frac{2^{n-1}(n^{2}+1)}{n}, n \in \mathbb{N}, \frac{n}{2} \not \in \mathbb{N}, n \ge 1 \\)
+<br> <br>
 
 # Soluções
 1º)

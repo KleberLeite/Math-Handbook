@@ -154,6 +154,16 @@
 <div align="center">
 <p><img src="Drafts/./Images/Question_3-Question.png" alt="Questão 3" /></p>
 </div>
+<br> <br>
+<p>4º)
+\( \sum_{p=0}^{n} \frac{(-1)^{p}n!}{p!(n-p)!} = 0, n \in \mathbb{N}, \frac{n}{2} \not \in \mathbb{N}, n \ge 1\)
+<br> <br></p>
+<p>5º)
+\( \sum_{p=0}^{n} \log_{n}\left( \frac{n!\cdot\sin\left(\frac{\pi}{2} + p\pi\right)}{p!(n-p)!} \right) = 0, n \in \mathbb{N}, \frac{n}{2} \not \in \mathbb{N}, n \ge 2 \)
+<br> <br></p>
+<p>6º)
+\( \sum_{p=0}^{n} \frac{n^{\sin\left(\frac{\pi}{2}+p\pi\right)}n!}{p!(n-p)!} = \frac{2^{n-1}(n^{2}+1)}{n}, n \in \mathbb{N}, \frac{n}{2} \not \in \mathbb{N}, n \ge 1 \)
+<br> <br></p>
 <h1 id="soluções"><a class="header" href="#soluções">Soluções</a></h1>
 <p>1º)</p>
 <div align="center">
@@ -518,6 +528,22 @@ A =
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
