@@ -132,8 +132,7 @@ Pode-se observar também algumas relações:
 Identifique no plano os seguintes pontos e indique quais pertences as bissetrizes:
 
 <div align="center">
-
-![Plano Cartesiano](../Images/Analytic%20Geometry/Question-1.png)
+    <img src="./Images/Question-1.png" alt="Questão 1" width="300" height="300">
 </div>
 
 \\[A(1,1) \quad B(-3, 3)\quad C(7, 7) \quad D(3, -1) \quad E(-6,-5)\\]
@@ -188,8 +187,7 @@ Possui área \\(3u\\) (sendo \\(u\\) unidade de área), defina \\(y\\).
 ### Resoluções
 #### 1º)
 <div align="center">
-
-![Resolução Questão 1](../Images/Analytic%20Geometry/Solution-Question-1.png)
+    <img src="./Images/Solution-Question-1.png" alt="Solução Questão 1" width="300" height="300">
 </div>
 
 #### 2º)
@@ -212,9 +210,9 @@ Possui área \\(3u\\) (sendo \\(u\\) unidade de área), defina \\(y\\).
 \\[A = 128\pi\\]
 
 #### 4º)
-<div align="center">
 
-![Resolução Questão 4](../Images/Analytic%20Geometry/Solution-Question-4.png)
+<div align="center">
+    <img src="./Images/Solution-Question-4.png" alt="Solução Questão 4" width="200" height="200">
 </div>
 
 Obs: o ponto de intersecção das diagonais de um paralelogramo é o ponto médio das mesmas, utilize isso para achar \\(D(D_x, D_y)\\)
