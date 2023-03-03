@@ -4,7 +4,7 @@
 ## Plano Cartesiano
 
 ### Definição:
-&nbsp;&nbsp;O plano cartesiano pode ser construído a partir de duas retas \\(x\\) (abscissa) e \\(y\\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \\(O(0, 0)\\). Definido o plano é possível identificar qualquer ponto \\(P\\), representado por um par ordenado \\(P(x, y)\\). Observe:
+&nbsp;&nbsp;O plano cartesiano pode ser construído a partir de duas retas \\(x\\) (abscissa) e \\(y\\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \\(O(0, 0)\\). Definido o plano é possível identificar qualquer ponto \\(P\\) associado a um par ordenado \\(P(x, y)\\). Observe:
 
 <div align="center">
     <img src="./Images/CartesianPlane.png" alt="Plano Cartesiano" width="300" height="300">
@@ -119,7 +119,7 @@ Pode-se observar também algumas relações:
 </div>
 
 #### Intersecção de duas retas:
-&nbsp;&nbsp;&nbsp;&nbsp;Dada duas retas \\(r: ax+by+c=0\\) e \\(s: dx+ey+f=0\\), o ponto de intersecção é o par ordenado \\((x, y)\\) que satisfazem as duas igualdades, ou seja, podemos resolver a intersecção de duas a partir de um sistema:
+&nbsp;&nbsp;&nbsp;&nbsp;Dada duas retas \\(r: ax+by+c=0\\) e \\(s: dx+ey+f=0\\), o ponto de intersecção é o ponto associado ao par ordenado \\((x, y)\\) que satisfazem as duas igualdades, ou seja, podemos resolver a intersecção de duas a partir de um sistema:
 \\[
     \begin{cases}
         ax+by+c=0\\\\
