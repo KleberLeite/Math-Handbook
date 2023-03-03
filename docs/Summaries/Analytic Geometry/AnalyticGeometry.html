@@ -147,30 +147,51 @@
                         <h1 id="geometria-analítica"><a class="header" href="#geometria-analítica">Geometria Analítica</a></h1>
 <h2 id="plano-cartesiano"><a class="header" href="#plano-cartesiano">Plano Cartesiano</a></h2>
 <h3 id="definição"><a class="header" href="#definição">Definição:</a></h3>
-<p>  O plano cartesiano pode ser construído a partir de duas retas \(x\) (abscissa) e \(y\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \(O\). Definido o plano é possível identificar qualquer ponto \(P\), representado por um par ordenado \(P(x, y)\).</p>
-<h4 id="quadrantes"><a class="header" href="#quadrantes">Quadrantes:</a></h4>
-<p>  A intersecção do plano cria quatro regiões chamadas quadrantes (representados por 1ºq, por exemplo), definidos pelas seguintes relações:</p>
-<ul>
-<li>1ºq: \(x &gt; 0\) e \(y &gt; 0 \)</li>
-<li>2ºq: \(x &lt; 0\) e \(y &gt; 0 \)</li>
-<li>3ºq: \(x &lt; 0\) e \(y &lt; 0 \)</li>
-<li>4ºq: \(x &gt; 0\) e \(y &lt; 0 \)</li>
-</ul>
+<p>  O plano cartesiano pode ser construído a partir de duas retas \(x\) (abscissa) e \(y\) (ordenada) perpendiculares entre si. O ponto de intersecção será chamado de origem, normalmente simbolizado por \(O(0, 0)\). Definido o plano é possível identificar qualquer ponto \(P\), representado por um par ordenado \(P(x, y)\). Observe:</p>
+<div align="center">
+    <img src="./Images/CartesianPlane.png" alt="Plano Cartesiano" width="300" height="300">
+</div>
+<h3 id="quadrantes"><a class="header" href="#quadrantes">Quadrantes:</a></h3>
+<p>  As retas \(x \text{ e } y\) dividem o plano em quatro quadrantes a partir de suas propriedades.</p>
+<div align="center">
+    <img src="./Images/CartesianPlane-Quadrants.png" alt="Plano Cartesiano" width="300" height="300">
+</div>
 <h4 id="bissetrizes"><a class="header" href="#bissetrizes">Bissetrizes:</a></h4>
 <p>  O plano nos permite desenhar duas bissetrizes, a dos quadrantes ímpares (1ºq e 3ºq), com relação \(x = y\) e a dos quadrantes pares (2ºq e 4ºq), com relação \(x = -y\).</p>
+<div align="center">
+    <img src="./Images/CartesianPlane-Bisectors.png" alt="Plano Cartesiano" width="300" height="300">
+</div>
 <h4 id="distância-entre-dois-pontos"><a class="header" href="#distância-entre-dois-pontos">Distância entre dois pontos:</a></h4>
 <p>  Dado dois pontos \(A\) e \(B\) quaisquer podemos obter a distância \(d_{AB}\) por meio do Teorema de Pitágoras ou como sendo:
 \[d_{AB} = \sqrt{(A_x-B_x)^2+(A_y-B_y)^2}\]</p>
 <div align="center">
-<p><img src="../Images/Analytic%20Geometry/PointsDistance.png" alt="Distância entre Pontos" /></p>
+    <img src="./Images/DistanceBetweenPoints.png" alt="Distância entre Pontos" width="300" height="300">
 </div>
 <h4 id="ponto-médio"><a class="header" href="#ponto-médio">Ponto médio:</a></h4>
-<p>  É o ponto \(C\) pertencente a reta suporte \(AB\) tal que \(d_{AC} = d_{CB}\), suas coordenadas podem ser obtidas da seguinte maneira:
+<p>  É o ponto \(C\) pertencente a reta suporte \(AB\) tal que \(d_{AC} = d_{CB}\), suas coordenadas podem ser obtidas obtida a partir da seguinte maneira:
 \[M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\]</p>
-<h4 id="baricentro-de-um-triângulo"><a class="header" href="#baricentro-de-um-triângulo">Baricentro de um triângulo:</a></h4>
+<div align="center">
+    <img src="./Images/MidPoint.png" alt="Ponto Médio" width="350" height="300">
+</div>
+<br>
+<p>Podemos demonstrar o resultado ao observar que ambos os triângulos são semelhantes pelo caso LAAo (Lado, Ângulo, Ângulo oposto): <br>
+\(a = \frac{A_y-B_y}{2}\) <br>
+\(M_y = B_y+a \Rightarrow M_y = \frac{2B_y+(A_y-B_y)}{2} = \frac{A_y+B_y}{2}\) <br> <br>
+\(b = \frac{A_x-B_x}{2}\) <br>
+\(M_x = B_x+b \Rightarrow M_x = \frac{2B_x+(A_x-B_x)}{2} = \frac{A_x+B_x}{2}\) <br> <br>
+Portanto: \(M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\)</p>
+<h3 id="baricentro-de-um-triângulo"><a class="header" href="#baricentro-de-um-triângulo">Baricentro de um triângulo:</a></h3>
 <p>  É o ponto de intersecção das alturas relativas de seus lados, pode ser obtido da seguinte maneira:
 \[H\left(\frac{A_x+B_x+C_x}3, \frac{A_y+B_y+C_y}3\right)\]</p>
-<h4 id="condição-de-alinhamento-de-3-pontos"><a class="header" href="#condição-de-alinhamento-de-3-pontos">Condição de alinhamento de 3 pontos:</a></h4>
+<div align="center">
+    <img src="./Images/Barycenter.png" alt="Baricentro" width="350" height="300">
+</div>
+<h3 id="ponto-pertencente-a-reta"><a class="header" href="#ponto-pertencente-a-reta">Ponto pertencente a reta:</a></h3>
+<p>  Um ponto pertence a uma reta \(r\) quando seus pontos são soluções da equação da reta. Por exemplo: <br>
+\(r: x+y=2\) <br>
+\(P(1, 1): 1+1=2 \therefore P \in r\) <br>
+\(Q(1, 2): 1+2\neq2 \therefore Q \not \in r\)</p>
+<h3 id="condição-de-alinhamento-de-3-pontos"><a class="header" href="#condição-de-alinhamento-de-3-pontos">Condição de alinhamento de 3 pontos:</a></h3>
 <p>  Quando 3 pontos pertencem a mesma reta, ou seja, são colineares, eles são soluções da equação da reta. Dado 3 pontos colineares \(A, B, C\):
 \[
 \begin{vmatrix}
@@ -180,33 +201,42 @@ C_x &amp; C_y &amp; 1
 \end{vmatrix} = 0
 \]</p>
 <h4 id="Área-de-um-triângulo-a-partir-de-seus-pontos"><a class="header" href="#Área-de-um-triângulo-a-partir-de-seus-pontos">Área de um triângulo a partir de seus pontos:</a></h4>
-<p>  Podemos descobrir a área de um triângulo a partir dos seus pontos:
+<p>  Podemos descobrir a área de um triângulo a partir de seus pontos:
 \[
 A = \frac{\vert D\vert}2, \text{ sendo } D = \begin{vmatrix}
 A_x &amp; A_y &amp; 1 \\
 B_x &amp; B_y &amp; 1 \\
 C_x &amp; C_y &amp; 1
 \end{vmatrix}
-\]</p>
-<h4 id="retas"><a class="header" href="#retas">Retas:</a></h4>
-<h5 id="coeficiente-linear"><a class="header" href="#coeficiente-linear">Coeficiente linear:</a></h5>
-<p>    Indica a inclinação da reta em relação ao eixo \(x\) e pode ser obtido por \(m = \tan(\theta) = \frac{\Delta y}{\Delta x}\)</p>
+\]
+  Portanto, é possível calcular a área de qualquer polígono de \(n\) lados ao dividí-los em \(n-2\) triângulos.</p>
+<h3 id="retas"><a class="header" href="#retas">Retas:</a></h3>
+<h4 id="coeficiente-linear"><a class="header" href="#coeficiente-linear">Coeficiente linear:</a></h4>
+<p>    Indica a inclinação da reta em relação ao eixo \(x\) e pode ser obtido por \(m = \tan(\theta) = \frac{\Delta y}{\Delta x}\).</p>
+<div align="center">
+    <img src="./Images/Line.png" alt="Retas" width="350" height="300">
+</div>
+<br>
+<p>Pode-se observar também algumas relações:</p>
 <ul>
 <li>Se \(m_1 = m_2\), então as retas são paralelas</li>
 <li>Se \(m_1 \neq m_2\), então as retas são concorrentes</li>
 <li>Se \(m_1⋅m_2 = -1\), então as retas são perpendiculares entre si</li>
 </ul>
-<h5 id="equações-de-reta"><a class="header" href="#equações-de-reta">Equações de reta:</a></h5>
+<h4 id="equações-de-reta"><a class="header" href="#equações-de-reta">Equações de reta:</a></h4>
 <ul>
 <li>\(y - y_0 = m(x-x_0)\), dado um ponto pertencente a reta \(P(x_0, y_0)\)</li>
-<li>\(y = mx + n\), \(n\) é o coeficiente linear obtido quando \(x = 0\)</li>
-<li>\(\frac{x}a + \frac{y}b = 1\), sendo \(a\) o ponto em que \(y = 0\) e \(b\) o ponto em que \(x=0\), com \(a \text{ e } b\neq 0\)</li>
-<li>\(ax+by+c=0\), \(m\) pode ser obtido a partir de \(m = \frac{-a}b\)</li>
+<li>\(\frac{x}a + \frac{y}b = 1\), sendo \(a\) o ponto em que a reta intersecta o eixo das abcissas e \(b\) o ponto em que a reta intersecta o eixo das ordenadas, com \(a \text{ e } b\neq 0\)</li>
+<li>Equação reduzida: \(y = mx + n\), \(n\) é o coeficiente linear obtido quando \(x = 0\)</li>
+<li>Equação geral: \(ax+by+c=0\), \(m\) pode ser obtido a partir de \(m = \frac{-a}b\)</li>
 </ul>
 <h4 id="distância-entre-ponto-e-reta"><a class="header" href="#distância-entre-ponto-e-reta">Distância entre ponto e reta:</a></h4>
 <p>    Dado uma reta \(r\) dada por \(ax+by+c=0\) e um ponto \(P(P_x, P_y)\):
 \[d_{P, r} = \frac{\vert aP_x+bP_y+c\vert}{\sqrt{a^2+b^2}}\]
     Obs: a menor distância entre um ponto e uma reta (\(d_{P, r}\)) é um segmento de reta \(\overline{PQ}\) perpendicular a \(r\) com \(Q\in r\)</p>
+<div align="center">
+    <img src="./Images/DistanceBetweenPointAndLine.png" alt="Distância entre Ponto e Reta" width="300" height="300">
+</div>
 <h4 id="intersecção-de-duas-retas"><a class="header" href="#intersecção-de-duas-retas">Intersecção de duas retas:</a></h4>
 <p>    Dada duas retas \(r: ax+by+c=0\) e \(s: dx+ey+f=0\), o ponto de intersecção é o par ordenado \((x, y)\) que satisfazem as duas igualdades, ou seja, podemos resolver a intersecção de duas a partir de um sistema:
 \[
@@ -367,6 +397,22 @@ A =
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
