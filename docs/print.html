@@ -348,7 +348,7 @@ A partir do uso do de funções trigonométricas de \(\frac{\pi}6\) podemos obte
 \(M_x = B_x+b \Rightarrow M_x = \frac{2B_x+(A_x-B_x)}{2} = \frac{A_x+B_x}{2}\) <br> <br>
 Portanto: \(M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\)</p>
 <h3 id="baricentro-de-um-triângulo"><a class="header" href="#baricentro-de-um-triângulo">Baricentro de um triângulo:</a></h3>
-<p>  É o ponto de intersecção das alturas relativas de seus lados, pode ser obtido da seguinte maneira:
+<p>  É o ponto de intersecção das medianas relativas de seus lados, pode ser obtido da seguinte maneira:
 \[H\left(\frac{A_x+B_x+C_x}3, \frac{A_y+B_y+C_y}3\right)\]</p>
 <div align="center">
     <img src="Summaries/Analytic Geometry/./Images/Barycenter.png" alt="Baricentro" width="350" height="300">
@@ -558,6 +558,22 @@ A =
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

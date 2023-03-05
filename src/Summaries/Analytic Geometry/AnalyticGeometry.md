@@ -54,7 +54,7 @@ Podemos demonstrar o resultado ao observar que ambos os triângulos são semelha
 Portanto: \\(M\left(\frac{A_x+B_x}2, \frac{A_y+B_y}2\right)\\)
 
 ### Baricentro de um triângulo:
-&nbsp;&nbsp;É o ponto de intersecção das alturas relativas de seus lados, pode ser obtido da seguinte maneira:
+&nbsp;&nbsp;É o ponto de intersecção das medianas relativas de seus lados, pode ser obtido da seguinte maneira:
 \\[H\left(\frac{A_x+B_x+C_x}3, \frac{A_y+B_y+C_y}3\right)\\]
 
 <div align="center">
