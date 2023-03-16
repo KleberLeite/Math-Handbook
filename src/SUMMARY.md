@@ -7,3 +7,4 @@
 - [Resumos](./Summaries/Summaries.md)
     - [Geometria Espacial](./Summaries/Spatial%20Geometry/SpatialGeometry.md)
     - [Geometria Analítica](./Summaries/Analytic%20Geometry/AnalyticGeometry.md)
+        - [Plano Cartesiano](./Summaries/Analytic%20Geometry/AnalyticGeometry-CartesianPlane.md)
