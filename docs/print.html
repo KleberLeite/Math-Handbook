@@ -9,7 +9,6 @@
 
         <!-- Custom HTML head -->
         
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -33,17 +32,18 @@
         <!-- Custom theme stylesheets -->
 
         <!-- MathJax -->
-        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -59,7 +59,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -71,12 +71,14 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -105,7 +107,7 @@
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
@@ -135,7 +137,7 @@
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -546,9 +548,118 @@ A =
 \[\frac{4y-6}2 = 3 \Rightarrow 4y=12 \Rightarrow y = 3\]</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="geometria-analítica-2"><a class="header" href="#geometria-analítica-2">Geometria Analítica</a></h1>
 <h2 id="circunfêrencia"><a class="header" href="#circunfêrencia">Circunfêrencia</a></h2>
+<h3 id="definição-1"><a class="header" href="#definição-1">Definição:</a></h3>
+<p>  Uma circunferência é o conjunto de pontos equidistantes a um ponto \(O(a, b)\) (chamado de centro) de raio \(r\), ou seja: <br>
+\[ \sqrt{(x-a)^2+(y-b)^2} = r \Leftrightarrow (x-a)^2 + (y-b)^2 = r^2 \]</p>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/Circumference.png" alt="Circunferência" width="330" height="300">
+</div>
+<h3 id="equação-geral"><a class="header" href="#equação-geral">Equação Geral:</a></h3>
+<p>Ao se desenvolver a equação \( (x-a)^2 + (y-b)^2 = r^2 \) temos: <br>
+\[ x^2-2ax+a^2 + y^2-2by+b^2 = r^2 \Leftrightarrow x^2+y^2-2ax-2by+(a^2+b^2-r^2) = 0 \]
+Em alguns casos a equação da circunferência será dada na forma geral sendo complicado identificar o centro e o raio da mesma, com isso será necessário utilizar o método de completar quadrado para tal. Observe:
+\[ x²+y²-2x+4y-4=0 \]
+Primeiro agrupemos os valores em termos de \(x\) e de \(y\) respectivamente, isolando termos independentes e adicionando dois valores, \(a\) e \(b\) que irá servir para completar os quadrados:
+\[ x^2-2x+a + y^2-4y+b = 4 \]
+Lembre-se que o valor do &quot;meio&quot; de um produto notável \((c-d)^2\) é \(-2cd\), note que em nosso caso \(c=x\), portanto temos que:
+\[ -2x = -2xa \Rightarrow a = 1\]
+\[ -4y = -2yb \Rightarrow b = 2\]
+Para mantermos a igualdade devemos somar \(a^2\) e \(b^2\) ao lado direito da equação:
+\[ x^2-2x+1^2 + y^2-4y+2^2 = 4+1^2+2^2\]
+Conclui-se que a equação da cincunferência será dada por:
+\[ (x-1)^2 + (y-2)^2 = 3^2\]
+Que possui centro \(O(1, 2)\) e raio \(3\).</p>
+<h3 id="posições-relativas-entre-reta-e-circunferência"><a class="header" href="#posições-relativas-entre-reta-e-circunferência">Posições Relativas entre Reta e Circunferência:</a></h3>
+<p>Existem três possíveis casos para a posição de uma reta em relação a uma circunfêrencia: <br></p>
+<ul>
+<li>1º) A reta é secante à circunferência, ou seja \(d_{O, r} \lt r \) <br></li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferenceSecant.png" alt="Reta secante à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>2º) A reta é tangente à circunferência, ou seja \(d_{O, r} = r\) <br></li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferenceTangent.png" alt="Reta tangente à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>3º) A reta é externa à circunferência, ou seja \(d_{O, r} \gt r\) <br></li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferenceExtern.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<h3 id="posições-relativas-entre-circunferências"><a class="header" href="#posições-relativas-entre-circunferências">Posições Relativas entre Circunferências</a></h3>
+<p>Existem quatro possíveis casos para a posição entre duas circunferências.</p>
+<ul>
+<li>1º) Externa, ou seja: \( d_{O_1, O_2} \gt R_{O_1} + R_{O_2}\)</li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferencesExtern.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>2º) Tangente externa, ou seja \(d_{O_1, O_2} = R_{O_1} + R_{O_2}\)</li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferencesTangentExtern.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>3º) Tangente interna, ou seja \(d_{O_1, O_2} = \vert R_{O_1}-R_{O_2} \vert \)</li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferencesTangentIntern.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>4º) Secante, ou seja \( \vert R_{O_1}-R_{O_2} \vert \lt d_{O_1, O_2} \lt R_{O_1} + R_{O_2}\)</li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferencesSecant.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>5º) Interna, ou seja \( d_{O_1, O_2} \lt \vert R_{O_1}-R_{O_2} \vert \)</li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferencesIntern.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<ul>
+<li>6º) Cocêntrica, ou seja \( O_1 \equiv O_2 \), \(d_{O_1, O_2} = 0\)</li>
+</ul>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferencesCocentric.png" alt="Reta externa à circunferência" width="330" height="300">
+</div>
+<h3 id="coeficiente-angular-da-reta-tangente-à-circunferência"><a class="header" href="#coeficiente-angular-da-reta-tangente-à-circunferência">Coeficiente Angular da Reta Tangente à Circunferência:</a></h3>
+<p>O coeficiente angular da reta tangente à um ponto \( P(P_x, P_y) \) da circunferência \( (x-a)^2 + (y-b)^2 = r^2 \) é dado por:
+\[ m = \frac{a-P_x}{b-P_y} \]
+Para chegar à essa fórmula podemos pensar que a reta tangente à circunferência é a reta perpendicular à reta que passa pelo centro da circunferência e o ponto \(P\), dessa forma:
+\[ m_{\overline{OP}} = \frac{P_x - a}{P_y - b} \]
+\[ m_t \cdot m_{\overline{OP}} = -1 \Leftrightarrow m_t = -\frac{P_x - a}{P_y - b} = \frac{a - P_x}{b - P_y}\]</p>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/CircumferenceTangentSample.png" alt="Reta tangente à circunferência" width="330" height="300">
+</div>
 <h2 id="elipse"><a class="header" href="#elipse">Elipse</a></h2>
-<h2 id="parábola"><a class="header" href="#parábola">Parábola</a></h2>
-<h2 id="hipérbole"><a class="header" href="#hipérbole">Hipérbole</a></h2>
+<h3 id="definição-2"><a class="header" href="#definição-2">Definição</a></h3>
+<p>É o conjunto de pontos tais que a soma de suas distâncias a dois pontos fixos, \(F_1\) e \(F_2\), seja constante.</p>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/Elipse.png" alt="Elipse" width="330" height="300">
+</div>
+<p>Na figura acima, temos:</p>
+<ul>
+<li>\(F_1\) e \(F_2\) são os focos da elipse e a distância entre eles é a distância focal (\(2c\))</li>
+<li>\(O(a, b)\) é o centro da elipse (ponto médio dos focos, do eixo maior e do eixo menor)</li>
+<li>\(\overline{A_1A_2}\) é o eixo maior da elipse (\(2a\))</li>
+<li>\(\overline{B_1B_2}\) é o eixo menor da elipse (\(2b\))</li>
+<li>\(a^2=b^2+c^2\)</li>
+</ul>
+<h3 id="excentricidade"><a class="header" href="#excentricidade">Excentricidade:</a></h3>
+<p>O valor \(e = \frac{c}{a}\) ( \(0 \lt e \lt 1\) ) chama-se excentricidade, quanto mais próxima de \(1\), o seu formato tende a um segmento de reta, quando próximo de \(0\) seu formato tende à uma circunferência.</p>
+<h3 id="equações"><a class="header" href="#equações">Equações:</a></h3>
+<p>A equação da elipse é dada pela fórmula:
+\[ \frac{(x-O_x)^2}{a^2} + \frac{(y-O_y)^2}{b^2} = 1 \]</p>
+<div align="center">
+    <img src="Summaries/Analytic Geometry/./Images/Elipse.png" alt="Elipse" width="330" height="300">
+</div>
+<p>Observe que o primeiro denominador corresponde ao eixo horizontal, ou seja, caso a elipse esteja na posição vertical a equação será a seguinte:
+\[ \frac{(x-O_x)^2}{b^2} + \frac{(y-O_y)^2}{a^2} = 1 \]</p>
 
                     </main>
 
@@ -568,7 +679,7 @@ A =
         </div>
 
         <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
+        <script>
             const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
             const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
             const socket = new WebSocket(wsAddress);
@@ -586,22 +697,22 @@ A =
 
 
 
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
 
 
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             MathJax.Hub.Register.StartupHook('End', function() {
                 window.setTimeout(window.print, 100);
@@ -609,5 +720,6 @@ A =
         });
         </script>
 
+    </div>
     </body>
 </html>
