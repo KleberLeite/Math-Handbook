@@ -149,6 +149,7 @@
                         <h1 id="geometria-analítica"><a class="header" href="#geometria-analítica">Geometria Analítica</a></h1>
 <ul>
 <li><a href="./AnalyticGeometry-CartesianPlane.html">Plano Cartesiano</a></li>
+<li><a href="./AnalyticGeometry-ConicSections.html">Secções Cônicas</a></li>
 </ul>
 
                     </main>
@@ -180,22 +181,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
